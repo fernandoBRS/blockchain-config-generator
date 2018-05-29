@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  workflowconfigweb:
+    image: ${DOCKER_REGISTRY}workflowconfigweb
+    build:
+      context: .
+      dockerfile: WorkflowConfigWeb/Dockerfile

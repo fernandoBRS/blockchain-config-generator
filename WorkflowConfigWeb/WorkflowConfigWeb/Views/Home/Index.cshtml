@@ -1,0 +1,75 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="platform-search" class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center align-self-center">
+        <div class="form-group">
+            <div class="col-md-10">
+                <h5>Azure Blockchain Workbench Configuration</h5>
+            </div>
+            <div class="col-md-10 select-col">
+                <div class="btn-group">
+                    <label>Blockchain Platform</label>
+                    @Html.DropDownListFor(x => x.Platforms,
+                         new SelectList(Model.Platforms, "Id", "Title"),
+                         htmlAttributes: new
+                         {
+                             @class = "form-control select select-inverse",
+                             id = "platforms"
+                         })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ethereum" class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center align-self-center">
+        <form method="post" enctype="multipart/form-data" asp-controller="UploadFiles" asp-action="Index">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <label for="applicationName">Application Name</label>
+                    <input type="text" class="form-control" id="applicationName" placeholder="Application Name" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <label for="displayName">Display Name</label>
+                    <input type="text" class="form-control" id="displayName" placeholder="Display Name" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" id="description" placeholder="Description" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <p>Upload one or more files using this form:</p>
+                    <input type="file" name="files" multiple />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <button class="btn btn-primary btn-wide mrm">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="hyperledger" class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center align-self-center">
+        <label>Not available</label>
+    </div>
+</div>
+
+<div id="corda" class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center align-self-center">
+        <label>Not available</label>
+    </div>
+</div>
