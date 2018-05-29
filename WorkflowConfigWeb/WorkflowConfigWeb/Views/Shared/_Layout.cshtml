@@ -19,12 +19,22 @@
     </environment>
 </head>
 <body>
-    @RenderBody()
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Azure Blockchain Workbench Configuration</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content" style="padding-top: 6%">
+        @RenderBody()
+    </div>
 
     <environment include="Development">
         <!-- Bootstrap 4 requires Popper.js -->
         <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-        
+
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
