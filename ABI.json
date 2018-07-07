@@ -1,0 +1,160 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "ResponseMessage",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "responseMessage",
+				"type": "string"
+			}
+		],
+		"name": "SendResponse",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "requestMessage",
+				"type": "string"
+			}
+		],
+		"name": "SendRequest",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "Responder",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "RequestMessage",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "State",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "Requestor",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "message",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "applicationName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "workflowName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "originatingAddress",
+				"type": "address"
+			}
+		],
+		"name": "WorkbenchContractCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "applicationName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "workflowName",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "action",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "originatingAddress",
+				"type": "address"
+			}
+		],
+		"name": "WorkbenchContractUpdated",
+		"type": "event"
+	}
+]

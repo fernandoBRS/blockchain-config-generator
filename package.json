@@ -1,0 +1,23 @@
+{
+  "name": "blockchain-config-generator",
+  "version": "1.0.0",
+  "description": "Azure Blockchain config files generator",
+  "main": "index.js",
+  "repository": "(https://github.com/fernandoBRS/blockchain-config-generator)",
+  "author": "Fernando de Oliveira <fedeoliv@microsoft.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^15.9.4",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^3.1.2",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.0.0",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.96.0",
+    "solc": "^0.4.24",
+    "touch": "^3.1.0"
+  }
+}
