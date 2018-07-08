@@ -24,7 +24,5 @@
     "solc": "^0.4.24",
     "touch": "^3.1.0"
   },
-  "devDependencies": {
-    "jshint": "^2.9.5"
-  }
+  "devDependencies": {}
 }
