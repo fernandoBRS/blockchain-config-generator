@@ -1,5 +1,8 @@
 # Blockconfig
 
+
+[![Build Status](https://travis-ci.org/fernandoBRS/blockchain-config-generator.svg?branch=master)](https://travis-ci.org/fernandoBRS/blockchain-config-generator)
+
 A command line tool that accelerates the creation of Ethereum blockchain configuration on [Azure Blockchain Workbench](https://docs.microsoft.com/en-us/azure/blockchain-workbench/blockchain-workbench-overview). 
 
 During the development of blockchain applications, the process of creating configuration files can be verbose and repetitive. Much of the information defined in a config file could easily be inferred from the Solidity source code and consequently reduce the effort to submit it during blockchain creation. This is what this tool does behind the scenes.
