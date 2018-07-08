@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Azure Blockchain config files generator",
   "main": "index.js",
+  "scripts": {
+    "create": "node index.js"
+  },
   "repository": "(https://github.com/fernandoBRS/blockchain-config-generator)",
   "author": "Fernando de Oliveira <fedeoliv@microsoft.com>",
   "license": "MIT",
