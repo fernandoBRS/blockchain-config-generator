@@ -4,7 +4,8 @@
   "description": "Azure Blockchain config files generator",
   "main": "index.js",
   "scripts": {
-    "create": "node index.js"
+    "create": "node index.js",
+    "test": "jshint index.js"
   },
   "repository": "(https://github.com/fernandoBRS/blockchain-config-generator)",
   "author": "Fernando de Oliveira <fedeoliv@microsoft.com>",
@@ -22,5 +23,8 @@
     "simple-git": "^1.96.0",
     "solc": "^0.4.24",
     "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
   }
 }
