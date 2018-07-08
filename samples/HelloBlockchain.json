@@ -14,7 +14,7 @@
   ],
   "Workflows": [
     {
-      "Name": ":HelloBlockchain",
+      "Name": "HelloBlockchain",
       "DisplayName": "TODO",
       "Description": "TODO",
       "Initiators": "TODO",
