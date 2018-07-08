@@ -1,63 +1,65 @@
 {
-  "ApplicationName": "HelloBlockchain",
-  "DisplayName": "Hello, Blockchain!",
-  "Description": "A simple application to send request and get response",
+  "ApplicationName": "TODO",
+  "DisplayName": "TODO",
+  "Description": "TODO",
   "ApplicationRoles": [
-    {
-      "Name": "Requestor",
-      "Description": "A person sending a request."
-    },
-    {
-      "Name": "Responder",
-      "Description": "A person responding to a request"
-    }
+    [
+      {
+        "Name": "Responder",
+        "Description": "TODO"
+      },
+      {
+        "Name": "Requestor",
+        "Description": "TODO"
+      }
+    ]
   ],
   "Workflows": [
     {
-      "Name": "HelloBlockchain",
-      "DisplayName": "Request Response",
-      "Description": "A simple workflow to send a request and receive a response.",
-      "Initiators": [ "Requestor" ],
-      "StartState": "Request",
+      "Name": ":HelloBlockchain",
+      "DisplayName": "TODO",
+      "Description": "TODO",
+      "Initiators": "TODO",
+      "StartState": "TODO",
       "Properties": [
         {
-          "Name": "State",
-          "DisplayName": "State",
-          "Description": "Holds the state of the contract.",
+          "Name": "ResponseMessage",
+          "DisplayName": "ResponseMessage",
+          "Description": "TODO",
           "Type": {
-            "Name": "state"
-          }
-        },
-        {
-          "Name": "Requestor",
-          "DisplayName": "Requestor",
-          "Description": "A person sending a request.",
-          "Type": {
-            "Name": "Requestor"
+            "Name": "TODO"
           }
         },
         {
           "Name": "Responder",
           "DisplayName": "Responder",
-          "Description": "A person sending a response.",
+          "Description": "TODO",
           "Type": {
-            "Name": "Responder"
+            "Name": "TODO"
           }
         },
         {
           "Name": "RequestMessage",
-          "DisplayName": "Request Message",
-          "Description": "A request message.",
+          "DisplayName": "RequestMessage",
+          "Description": "TODO",
           "Type": {
-            "Name": "string"
+            "Name": "TODO"
           }
         },
         {
-          "Name": "ResponseMessage",
-          "DisplayName": "Response Message",
-          "Description": "A response message.",
+          "Name": "State",
+          "DisplayName": "State",
+          "Description": "TODO",
           "Type": {
-            "Name": "string"
+            "Name": "TODO"
+          }
+        },
+        {
+          "Name": "Requestor",
+          "DisplayName": "Requestor",
+          "Description": "TODO",
+          "Type": {
+            "Name": "TODO"
           }
         }
       ],
@@ -65,8 +67,8 @@
         "Parameters": [
           {
             "Name": "message",
-            "Description": "...",
-            "DisplayName": "Request Message",
+            "Description": "TODO",
+            "DisplayName": "TODO",
             "Type": {
               "Name": "string"
             }
@@ -75,14 +77,14 @@
       },
       "Functions": [
         {
-          "Name": "SendRequest",
-          "DisplayName": "Request",
-          "Description": "...",
+          "Name": "SendResponse",
+          "DisplayName": "SendResponse",
+          "Description": "TODO",
           "Parameters": [
             {
-              "Name": "requestMessage",
-              "Description": "...",
-              "DisplayName": "Request Message",
+              "Name": "responseMessage",
+              "DisplayName": "responseMessage",
+              "Description": "TODO",
               "Type": {
                 "Name": "string"
               }
@@ -90,14 +92,14 @@
           ]
         },
         {
-          "Name": "SendResponse",
-          "DisplayName": "Response",
-          "Description": "...",
+          "Name": "SendRequest",
+          "DisplayName": "SendRequest",
+          "Description": "TODO",
           "Parameters": [
             {
-              "Name": "responseMessage",
-              "Description": "...",
-              "DisplayName": "Response Message",
+              "Name": "requestMessage",
+              "DisplayName": "requestMessage",
+              "Description": "TODO",
               "Type": {
                 "Name": "string"
               }
@@ -105,44 +107,24 @@
           ]
         }
       ],
-      "States": [
-        {
-          "Name": "Request",
-          "DisplayName": "Request",
-          "Description": "...",
-          "PercentComplete": 50,
-          "Value": 0,
-          "Style": "Success",
-          "Transitions": [
-            {
-              "AllowedRoles": ["Responder"],
-              "AllowedInstanceRoles": [],
-              "Description": "...",
-              "Function": "SendResponse",
-              "NextStates": [ "Respond" ],
-              "DisplayName": "Send Response"
-            }
-          ]
-        },
-        {
-          "Name": "Respond",
-          "DisplayName": "Respond",
-          "Description": "...",
-          "PercentComplete": 90,
-          "Value": 1,
-          "Style": "Success",
-          "Transitions": [
-            {
-              "AllowedRoles": [],
-              "AllowedInstanceRoles": ["Requestor"],
-              "Description": "...",
-              "Function": "SendRequest",
-              "NextStates": [ "Request" ],
-              "DisplayName": "Send Request"
-            }
-          ]
-        }
-      ]
+      "States": {
+        "Name": "TODO",
+        "DisplayName": "TODO",
+        "Description": "TODO",
+        "PercentComplete": 0,
+        "Value": 0,
+        "Style": "TODO",
+        "Transitions": [
+          {
+            "AllowedRoles": [],
+            "AllowedInstanceRoles": [],
+            "Description": "TODO",
+            "Function": "TODO",
+            "NextStates": [],
+            "DisplayName": "TODO"
+          }
+        ]
+      }
     }
   ]
 }
