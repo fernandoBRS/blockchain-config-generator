@@ -18,7 +18,11 @@ if (!contractManager.existsAnyFile()) {
     process.exit();
 } 
 
+console.log(chalk.green('Creating config files...'));
+
 var contracts = contractManager.getContent();
 var configManager = new ConfigManager(contracts);
 
 configManager.createConfigFiles();
+
+console.log(chalk.green('Done!'));
