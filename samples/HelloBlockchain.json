@@ -105,24 +105,26 @@
           ]
         }
       ],
-      "States": {
-        "Name": "TODO",
-        "DisplayName": "TODO",
-        "Description": "TODO",
-        "PercentComplete": 0,
-        "Value": 0,
-        "Style": "TODO",
-        "Transitions": [
-          {
-            "AllowedRoles": [],
-            "AllowedInstanceRoles": [],
-            "Description": "TODO",
-            "Function": "TODO",
-            "NextStates": [],
-            "DisplayName": "TODO"
-          }
-        ]
-      }
+      "States": [
+        {
+          "Name": "TODO",
+          "DisplayName": "TODO",
+          "Description": "TODO",
+          "PercentComplete": 0,
+          "Value": 0,
+          "Style": "TODO",
+          "Transitions": [
+            {
+              "AllowedRoles": [],
+              "AllowedInstanceRoles": [],
+              "Description": "TODO",
+              "Function": "TODO",
+              "NextStates": [],
+              "DisplayName": "TODO"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
