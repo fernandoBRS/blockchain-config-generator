@@ -3,16 +3,14 @@
   "DisplayName": "TODO",
   "Description": "TODO",
   "ApplicationRoles": [
-    [
-      {
-        "Name": "Responder",
-        "Description": "TODO"
-      },
-      {
-        "Name": "Requestor",
-        "Description": "TODO"
-      }
-    ]
+    {
+      "Name": "Responder",
+      "Description": "TODO"
+    },
+    {
+      "Name": "Requestor",
+      "Description": "TODO"
+    }
   ],
   "Workflows": [
     {
