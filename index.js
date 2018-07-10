@@ -1,6 +1,4 @@
 const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
 var ContractManager = require('./lib/contract-manager');
 var ConfigManager = require('./lib/config-manager');
 
