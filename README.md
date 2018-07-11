@@ -1,7 +1,7 @@
 # Blockconfig
 
 
-[![Build Status](https://travis-ci.org/fernandoBRS/blockchain-config-generator.svg?branch=master)](https://travis-ci.org/fernandoBRS/blockchain-config-generator)
+[![Build Status](https://travis-ci.org/fernandoBRS/blockconfig.svg?branch=master)](https://travis-ci.org/fernandoBRS/blockconfig)
 
 A command line tool that accelerates the creation of Ethereum blockchain configuration on [Azure Blockchain Workbench](https://docs.microsoft.com/en-us/azure/blockchain-workbench/blockchain-workbench-overview). 
 
