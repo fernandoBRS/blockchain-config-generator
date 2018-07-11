@@ -27,7 +27,7 @@
           "DisplayName": "ResponseMessage",
           "Description": "TODO",
           "Type": {
-            "Name": "TODO"
+            "Name": "string"
           }
         },
         {
@@ -35,7 +35,7 @@
           "DisplayName": "Responder",
           "Description": "TODO",
           "Type": {
-            "Name": "TODO"
+            "Name": "address"
           }
         },
         {
@@ -43,7 +43,7 @@
           "DisplayName": "RequestMessage",
           "Description": "TODO",
           "Type": {
-            "Name": "TODO"
+            "Name": "string"
           }
         },
         {
@@ -51,7 +51,7 @@
           "DisplayName": "State",
           "Description": "TODO",
           "Type": {
-            "Name": "TODO"
+            "Name": "uint8"
           }
         },
         {
@@ -59,7 +59,7 @@
           "DisplayName": "Requestor",
           "Description": "TODO",
           "Type": {
-            "Name": "TODO"
+            "Name": "address"
           }
         }
       ],
