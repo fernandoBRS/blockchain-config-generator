@@ -1,31 +1,31 @@
 {
-  "ApplicationName": "TODO",
-  "DisplayName": "TODO",
-  "Description": "TODO",
+  "ApplicationName": "",
+  "DisplayName": "",
+  "Description": "",
   "ApplicationRoles": [
     {
       "Name": "Responder",
-      "Description": "TODO"
+      "Description": ""
     },
     {
       "Name": "Requestor",
-      "Description": "TODO"
+      "Description": ""
     }
   ],
   "Workflows": [
     {
       "Name": "HelloBlockchain",
-      "DisplayName": "TODO",
-      "Description": "TODO",
+      "DisplayName": "",
+      "Description": "",
       "Initiators": [
-        "TODO"
+        ""
       ],
-      "StartState": "TODO",
+      "StartState": "",
       "Properties": [
         {
           "Name": "ResponseMessage",
           "DisplayName": "ResponseMessage",
-          "Description": "TODO",
+          "Description": "",
           "Type": {
             "Name": "string"
           }
@@ -33,7 +33,7 @@
         {
           "Name": "Responder",
           "DisplayName": "Responder",
-          "Description": "TODO",
+          "Description": "",
           "Type": {
             "Name": "address"
           }
@@ -41,7 +41,7 @@
         {
           "Name": "RequestMessage",
           "DisplayName": "RequestMessage",
-          "Description": "TODO",
+          "Description": "",
           "Type": {
             "Name": "string"
           }
@@ -49,7 +49,7 @@
         {
           "Name": "State",
           "DisplayName": "State",
-          "Description": "TODO",
+          "Description": "",
           "Type": {
             "Name": "uint8"
           }
@@ -57,7 +57,7 @@
         {
           "Name": "Requestor",
           "DisplayName": "Requestor",
-          "Description": "TODO",
+          "Description": "",
           "Type": {
             "Name": "address"
           }
@@ -67,8 +67,8 @@
         "Parameters": [
           {
             "Name": "message",
-            "Description": "TODO",
-            "DisplayName": "TODO",
+            "Description": "",
+            "DisplayName": "",
             "Type": {
               "Name": "string"
             }
@@ -78,13 +78,13 @@
       "Functions": [
         {
           "Name": "SendResponse",
-          "DisplayName": "SendResponse",
-          "Description": "TODO",
+          "DisplayName": "",
+          "Description": "",
           "Parameters": [
             {
               "Name": "responseMessage",
               "DisplayName": "responseMessage",
-              "Description": "TODO",
+              "Description": "",
               "Type": {
                 "Name": "string"
               }
@@ -93,13 +93,13 @@
         },
         {
           "Name": "SendRequest",
-          "DisplayName": "SendRequest",
-          "Description": "TODO",
+          "DisplayName": "",
+          "Description": "",
           "Parameters": [
             {
               "Name": "requestMessage",
               "DisplayName": "requestMessage",
-              "Description": "TODO",
+              "Description": "",
               "Type": {
                 "Name": "string"
               }
@@ -109,20 +109,20 @@
       ],
       "States": [
         {
-          "Name": "TODO",
-          "DisplayName": "TODO",
-          "Description": "TODO",
+          "Name": "",
+          "DisplayName": "",
+          "Description": "",
           "PercentComplete": 0,
           "Value": 0,
-          "Style": "TODO",
+          "Style": "",
           "Transitions": [
             {
               "AllowedRoles": [],
               "AllowedInstanceRoles": [],
-              "Description": "TODO",
-              "Function": "TODO",
+              "Description": "",
+              "Function": "",
               "NextStates": [],
-              "DisplayName": "TODO"
+              "DisplayName": ""
             }
           ]
         }
