@@ -17,7 +17,9 @@
       "Name": "HelloBlockchain",
       "DisplayName": "TODO",
       "Description": "TODO",
-      "Initiators": "TODO",
+      "Initiators": [
+        "TODO"
+      ],
       "StartState": "TODO",
       "Properties": [
         {
