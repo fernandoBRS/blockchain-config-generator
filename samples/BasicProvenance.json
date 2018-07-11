@@ -4,17 +4,29 @@
   "Description": "",
   "ApplicationRoles": [
     {
-      "Name": "Responder",
+      "Name": "PreviousCounterparty",
       "Description": ""
     },
     {
-      "Name": "Requestor",
+      "Name": "SupplyChainObserver",
+      "Description": ""
+    },
+    {
+      "Name": "Counterparty",
+      "Description": ""
+    },
+    {
+      "Name": "SupplyChainOwner",
+      "Description": ""
+    },
+    {
+      "Name": "InitiatingCounterparty",
       "Description": ""
     }
   ],
   "Workflows": [
     {
-      "Name": "HelloBlockchain",
+      "Name": "BasicProvenance",
       "DisplayName": "",
       "Description": "",
       "Initiators": [
@@ -23,27 +35,43 @@
       "StartState": "",
       "Properties": [
         {
-          "Name": "ResponseMessage",
-          "DisplayName": "ResponseMessage",
-          "Description": "",
-          "Type": {
-            "Name": "string"
-          }
-        },
-        {
-          "Name": "Responder",
-          "DisplayName": "Responder",
+          "Name": "PreviousCounterparty",
+          "DisplayName": "PreviousCounterparty",
           "Description": "",
           "Type": {
             "Name": "address"
           }
         },
         {
-          "Name": "RequestMessage",
-          "DisplayName": "RequestMessage",
+          "Name": "SupplyChainObserver",
+          "DisplayName": "SupplyChainObserver",
           "Description": "",
           "Type": {
-            "Name": "string"
+            "Name": "address"
+          }
+        },
+        {
+          "Name": "Counterparty",
+          "DisplayName": "Counterparty",
+          "Description": "",
+          "Type": {
+            "Name": "address"
+          }
+        },
+        {
+          "Name": "SupplyChainOwner",
+          "DisplayName": "SupplyChainOwner",
+          "Description": "",
+          "Type": {
+            "Name": "address"
+          }
+        },
+        {
+          "Name": "InitiatingCounterparty",
+          "DisplayName": "InitiatingCounterparty",
+          "Description": "",
+          "Type": {
+            "Name": "address"
           }
         },
         {
@@ -53,55 +81,46 @@
           "Type": {
             "Name": "uint8"
           }
-        },
-        {
-          "Name": "Requestor",
-          "DisplayName": "Requestor",
-          "Description": "",
-          "Type": {
-            "Name": "address"
-          }
         }
       ],
       "Constructor": {
         "Parameters": [
           {
-            "Name": "message",
+            "Name": "supplyChainOwner",
             "Description": "",
             "DisplayName": "",
             "Type": {
-              "Name": "string"
+              "Name": "address"
+            }
+          },
+          {
+            "Name": "supplyChainObserver",
+            "Description": "",
+            "DisplayName": "",
+            "Type": {
+              "Name": "address"
             }
           }
         ]
       },
       "Functions": [
         {
-          "Name": "SendResponse",
+          "Name": "Complete",
           "DisplayName": "",
           "Description": "",
-          "Parameters": [
-            {
-              "Name": "responseMessage",
-              "DisplayName": "",
-              "Description": "",
-              "Type": {
-                "Name": "string"
-              }
-            }
-          ]
+          "Parameters": []
         },
         {
-          "Name": "SendRequest",
+          "Name": "TransferResponsibility",
           "DisplayName": "",
           "Description": "",
           "Parameters": [
             {
-              "Name": "requestMessage",
+              "Name": "newCounterparty",
               "DisplayName": "",
               "Description": "",
               "Type": {
-                "Name": "string"
+                "Name": "address"
               }
             }
           ]

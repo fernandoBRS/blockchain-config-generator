@@ -4,17 +4,17 @@
   "Description": "",
   "ApplicationRoles": [
     {
-      "Name": "Responder",
+      "Name": "InstanceOwner",
       "Description": ""
     },
     {
-      "Name": "Requestor",
+      "Name": "InstanceBuyer",
       "Description": ""
     }
   ],
   "Workflows": [
     {
-      "Name": "HelloBlockchain",
+      "Name": "SimpleMarketplace",
       "DisplayName": "",
       "Description": "",
       "Initiators": [
@@ -23,27 +23,43 @@
       "StartState": "",
       "Properties": [
         {
-          "Name": "ResponseMessage",
-          "DisplayName": "ResponseMessage",
-          "Description": "",
-          "Type": {
-            "Name": "string"
-          }
-        },
-        {
-          "Name": "Responder",
-          "DisplayName": "Responder",
+          "Name": "InstanceOwner",
+          "DisplayName": "InstanceOwner",
           "Description": "",
           "Type": {
             "Name": "address"
           }
         },
         {
-          "Name": "RequestMessage",
-          "DisplayName": "RequestMessage",
+          "Name": "OfferPrice",
+          "DisplayName": "OfferPrice",
+          "Description": "",
+          "Type": {
+            "Name": "int256"
+          }
+        },
+        {
+          "Name": "Description",
+          "DisplayName": "Description",
           "Description": "",
           "Type": {
             "Name": "string"
+          }
+        },
+        {
+          "Name": "InstanceBuyer",
+          "DisplayName": "InstanceBuyer",
+          "Description": "",
+          "Type": {
+            "Name": "address"
+          }
+        },
+        {
+          "Name": "AskingPrice",
+          "DisplayName": "AskingPrice",
+          "Description": "",
+          "Type": {
+            "Name": "int256"
           }
         },
         {
@@ -53,58 +69,55 @@
           "Type": {
             "Name": "uint8"
           }
-        },
-        {
-          "Name": "Requestor",
-          "DisplayName": "Requestor",
-          "Description": "",
-          "Type": {
-            "Name": "address"
-          }
         }
       ],
       "Constructor": {
         "Parameters": [
           {
-            "Name": "message",
+            "Name": "description",
             "Description": "",
             "DisplayName": "",
             "Type": {
               "Name": "string"
+            }
+          },
+          {
+            "Name": "price",
+            "Description": "",
+            "DisplayName": "",
+            "Type": {
+              "Name": "int256"
             }
           }
         ]
       },
       "Functions": [
         {
-          "Name": "SendResponse",
+          "Name": "MakeOffer",
           "DisplayName": "",
           "Description": "",
           "Parameters": [
             {
-              "Name": "responseMessage",
+              "Name": "offerPrice",
               "DisplayName": "",
               "Description": "",
               "Type": {
-                "Name": "string"
+                "Name": "int256"
               }
             }
           ]
         },
         {
-          "Name": "SendRequest",
+          "Name": "Reject",
           "DisplayName": "",
           "Description": "",
-          "Parameters": [
-            {
-              "Name": "requestMessage",
-              "DisplayName": "",
-              "Description": "",
-              "Type": {
-                "Name": "string"
-              }
-            }
-          ]
+          "Parameters": []
+        },
+        {
+          "Name": "AcceptOffer",
+          "DisplayName": "",
+          "Description": "",
+          "Parameters": []
         }
       ],
       "States": [
